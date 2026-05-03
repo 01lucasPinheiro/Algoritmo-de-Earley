@@ -29,7 +29,7 @@ regras = [
 
 gramatica = Gramatica.new(regras, "S")
 parser = EarleyParser.new(gramatica)
-input = "2 + 4 ^ -4 / 4"
+input = "(2 + 4) ^ -4 / 4"
 input = input.gsub(/\s+/, "")
 
 # metodo parse retorna arvore ou nil
